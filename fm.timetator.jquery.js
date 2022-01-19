@@ -44,7 +44,7 @@
 			plugin.settings = $.extend({}, defaults, options);
 			$element.addClass('timetator');
 			$element.bind('blur', sanitize);
-			$element.bind('mouseup', select);
+			//$element.bind('mouseup', select);
 			sanitize();
 		};
 		
@@ -109,7 +109,7 @@
 			$element.removeClass('timetator');
 			$.removeData(element, 'timetator');
 			$element.unbind('blur', sanitize);
-			$element.unbind('mouseup', select);
+			//$element.unbind('mouseup', select);
 			$element.show();
 		};
 		
